@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Арсений — портфолио</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6fafd;
+  --panel:#ffffff;
+  --ink:#1c2b36;
+  --sub:#5c7486;
+  --blue:#2f6fb0;
+  --blue-soft:#eaf2fa;
+  --line:#dde8f0;
+  --sans:"Manrope",system-ui,sans-serif;
+  --serif:"Fraunces",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;font-size:17px}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(47,111,176,.35)}
+a:hover,a:focus-visible{border-bottom-color:var(--blue)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+img,svg{max-width:100%}
+
+header.hero{max-width:1040px;margin:0 auto;padding:14vh 6vw 10vh;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+.hero-text h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.4rem,6vw,4rem);line-height:1.1;letter-spacing:-.01em}
+.hero-text p{color:var(--sub);font-size:1.15rem;margin-top:1rem;max-width:40ch}
+.hero-text .down{display:inline-block;margin-top:2.2rem;font-size:.85rem;letter-spacing:.08em;color:var(--blue);border-bottom:1px solid var(--blue)}
+.mark{width:150px;height:150px;flex:none}
+@media (max-width:680px){header.hero{grid-template-columns:1fr;text-align:left}.mark{width:96px;height:96px}}
+
+section{max-width:1040px;margin:0 auto;padding:9vh 6vw;border-top:1px solid var(--line)}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:2.2rem;letter-spacing:-.01em}
+p{max-width:62ch;color:var(--sub)}
+.about p+p{margin-top:1.1rem}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2.4rem}
+.skills h3{font-weight:600;font-size:.95rem;color:var(--ink);margin-bottom:.7rem}
+.skills ul{list-style:none}
+.skills li{padding:.4rem 0;border-bottom:1px solid var(--line);color:var(--sub);font-size:.98rem}
+
+.timeline{display:grid;gap:0}
+.timeline article{display:grid;grid-template-columns:140px 1fr;gap:1.6rem;padding:1.6rem 0;border-top:1px solid var(--line)}
+.timeline article:last-child{border-bottom:1px solid var(--line)}
+.timeline time{color:var(--blue);font-size:.92rem;font-weight:500}
+.timeline h3{font-weight:500;font-size:1.1rem;margin-bottom:.25rem}
+.timeline p{font-size:.98rem}
+@media (max-width:560px){.timeline article{grid-template-columns:1fr;gap:.3rem}}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:1.8rem}
+.card .num{font-family:var(--serif);font-size:2.1rem;color:var(--blue);line-height:1}
+.card h3{font-weight:500;font-size:1.02rem;margin:.6rem 0 .3rem}
+.card p{font-size:.92rem;margin:0}
+
+.sport-list{display:flex;flex-wrap:wrap;gap:.8rem}
+.chip{background:var(--blue-soft);color:var(--blue);border-radius:999px;padding:.5rem 1.1rem;font-size:.9rem;font-weight:500}
+
+.contact ul{list-style:none;margin-top:1.4rem}
+.contact li{padding:.35rem 0}
+footer{text-align:center;padding:6vh 6vw 8vh;color:var(--sub);font-size:.85rem}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1>Арсений</h1>
+    <p>Силовой спорт, дисциплина и точный расчёт — в тренировках и в учёбе.</p>
+    <a class="down" href="#about">Подробнее →</a>
+  </div>
+  <svg class="mark" viewBox="0 0 150 150" role="img" aria-label="Минималистичный значок">
+    <circle cx="75" cy="75" r="72" fill="none" stroke="#dde8f0" stroke-width="1.5"/>
+    <circle cx="75" cy="75" r="46" fill="none" stroke="#2f6fb0" stroke-width="1.5"/>
+    <circle cx="75" cy="75" r="4" fill="#2f6fb0"/>
+  </svg>
+</header>
+
+<main>
+  <section id="about" class="about">
+    <h2>О себе</h2>
+    <p>Меня зовут Арсений. Я привык идти к результату шаг за шагом — этот подход сложился в спорте и переносится на учёбу.</p>
+    <p>Учусь в ВШЭ Санкт-Петербург на программе «Прикладной анализ данных и искусственный интеллект». Мне интересен карьерный путь, который предлагает университет, и пул возможностей, который он открывает.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Навыки</h2>
+    <div class="skills">
+      <div>
+        <h3>Технологии</h3>
+        <ul>
+          <li>C++</li>
+          <li>Python</li>
+          <li>Git</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Спорт</h3>
+        <ul>
+          <li>Становая тяга</li>
+          <li>Силовое троеборье</li>
+          <li>Планирование нагрузки</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Личные качества</h3>
+        <ul>
+          <li>Дисциплина</li>
+          <li>Работа на результат</li>
+          <li>Спокойствие в стрессовых ситуациях</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Опыт</h2>
+    <div class="timeline">
+      <article>
+        <time>2025 — сейчас</time>
+        <div>
+          <h3>ВШЭ Санкт-Петербург</h3>
+          <p>Программа «Прикладной анализ данных и искусственный интеллект».</p>
+        </div>
+      </article>
+      <article>
+        <time>2024</time>
+        <div>
+          <h3>Школа, подготовка к ВсОШ по ОБЖ</h3>
+          <p>Вышел на региональный этап и стал призёром.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="sport">
+    <h2>Спортивный путь</h2>
+    <div class="sport-list">
+      <span class="chip">Футбол — 1 год</span>
+      <span class="chip">Волейбол — 1 год</span>
+      <span class="chip">Самбо — 2 года</span>
+      <span class="chip">Силовое троеборье</span>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Достижения</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="num">КМС</div>
+        <h3>Становая тяга</h3>
+        <p>Кандидат в мастера спорта.</p>
+      </div>
+      <div class="card">
+        <div class="num">505 кг</div>
+        <h3>Сумма в троеборье</h3>
+        <p>Приседание, жим лёжа и становая тяга в сумме.</p>
+      </div>
+      <div class="card">
+        <div class="num">2024</div>
+        <h3>Призёр ВсОШ по ОБЖ</h3>
+        <p>Региональный этап, 10 класс.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Связь</h2>
+    <p>Пишите, если хотите обсудить проект, тренировки или просто поздороваться.</p>
+    <ul>
+      <li>Почта: <a href="mailto:voroxov.a2008@mail.ru">voroxov.a2008@mail.ru</a></li>
+      <li>GitHub: <a href="https://github.com/senq55">github.com/senq55</a></li>
+      <li>Telegram: <a href="https://t.me/a5840">@a5840</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>© 2026 Арсений</footer>
+
+</body>
+</html>
